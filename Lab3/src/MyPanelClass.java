@@ -25,8 +25,8 @@ public class MyPanelClass extends JPanel {
                         int height = y2 - y1;
  
                         //Paint the background
-                        g.setColor(Color.blue);
-                        g.fillRect(x1, y1, width, height);
+                        g.setColor(Color.CYAN);
+                        g.fillRect(x1, y1, width+1, height+1);
                         //Draw a border
 //                        g.setColor(Color.YELLOW);
 //                        g.drawRect(x1+20, y1+20, x2-40, y2-40);      
@@ -50,19 +50,73 @@ public class MyPanelClass extends JPanel {
 //                        p.addPoint(x1 + 15, y1 + 25);
 //                        g.setColor(Color.YELLOW);
 //                        g.fillPolygon(p);
-                        Polygon p2 = new Polygon();
-                        p2.addPoint(x1 + 25, y1 + 73);
-                        p2.addPoint(x1 + 41, y1 + 73);
-                        p2.addPoint(x1 + 47, y1 + 58);
-                        p2.addPoint(x1 + 53, y1 + 73);
-                        p2.addPoint(x1 + 69, y1 + 73);
-                        p2.addPoint(x1 + 56, y1 + 83);
-                        p2.addPoint(x1 + 61, y1 + 98);
-                        p2.addPoint(x1 + 47, y1 + 88);
-                        p2.addPoint(x1 + 34, y1 + 98);
-                        p2.addPoint(x1 + 38, y1 + 83);
+//                        Polygon p2 = new Polygon();
+//                        p2.addPoint(x1 + 25, y1 + 73);
+//                        p2.addPoint(x1 + 41, y1 + 73);
+//                        p2.addPoint(x1 + 47, y1 + 58);
+//                        p2.addPoint(x1 + 53, y1 + 73);
+//                        p2.addPoint(x1 + 69, y1 + 73);
+//                        p2.addPoint(x1 + 56, y1 + 83);
+//                        p2.addPoint(x1 + 61, y1 + 98);
+//                        p2.addPoint(x1 + 47, y1 + 88);
+//                        p2.addPoint(x1 + 34, y1 + 98);
+//                        p2.addPoint(x1 + 38, y1 + 83);
+//                        g.setColor(Color.WHITE);
+//                        g.drawPolygon(p2);
+                                                                      
                         g.setColor(Color.WHITE);
-                        g.drawPolygon(p2);
+                        g.fillRect(x1 + 20, y1 + 40, width - 120, height - 233);  
+                        
+                        g.setColor(Color.WHITE);
+                        g.fillRect(x1 + 20, y1 + 100, width - 120, height - 233);                     
+                        
+                        
+                          
+                        Polygon p4 = new Polygon();
+                        p4.addPoint(x1, y1);
+                        p4.addPoint(x1 + 115, y1 + 68);
+                        p4.addPoint(x1, y1 + 125 );
+                        g.setColor(Color.BLUE);
+                        g.fillPolygon(p4); 
+                         
+                          
+                        Polygon p3 = new Polygon();
+                        p3.addPoint(x1 + 25, y1 + 73); // third point
+                        p3.addPoint(x1 + 41, y1 + 73);
+                        p3.addPoint(x1 + 47, y1 + 49); // first point
+                        p3.addPoint(x1 + 53, y1 + 73);
+                        p3.addPoint(x1 + 69, y1 + 73);
+                        p3.addPoint(x1 + 56, y1 + 83);
+                        p3.addPoint(x1 + 61, y1 + 98);
+                        p3.addPoint(x1 + 47, y1 + 88);
+                        p3.addPoint(x1 + 34, y1 + 98);
+                        p3.addPoint(x1 + 38, y1 + 83);
+                        g.setColor(Color.WHITE);
+                        g.fillPolygon(p3);
+                        
+                        Polygon p5 = new Polygon();
+                        p5.addPoint(x1, y1);
+                        p5.addPoint(x1+250, y1);
+                        p5.addPoint(x1+250, y1+25);
+                        p5.addPoint(x1+40, y1+25);
+                        g.setColor(Color.RED);
+                        g.fillPolygon(p5);
+                        
+                        Polygon p6 = new Polygon();
+                        p6.addPoint(x1+40, y1+25);
+                        p6.addPoint(x1+250, y1+25);
+                        p6.addPoint(x1+250, y1+50);
+                        p6.addPoint(x1+85, y1+50);
+                        g.setColor(Color.WHITE);
+                        g.fillPolygon(p6);
+
+                        Polygon p7 = new Polygon();
+                        p7.addPoint(x1, y1);
+                        p7.addPoint(x1+250, y1);
+                        p7.addPoint(x1+250, y1+25);
+                        p7.addPoint(x1+40, y1+25);
+                        g.setColor(Color.RED);
+                        g.drawPolygon(p7);
 
 
 
